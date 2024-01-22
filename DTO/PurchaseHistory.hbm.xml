@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Somnio" namespace="Somnio.DTO">
+  <class name="PurchaseHistory" table="PurchaseHistory">
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property name="NumberOfItems" column="NumberOfItems" type="int" />
+    <property name="TotalCost" column="TotalCost" />
+    <property name="Date" column="Date" type="DateTime" />
+  </class>
+</hibernate-mapping>

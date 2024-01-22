@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Somnio.DTO.PurchaseHistory>
+<script src="~/scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="~/js/Index.js"></script>
+<style src="~/css/Style.css"></style>
+<h2>Histórico de compras</h2>
+<div class="wide-table">
+    <div id="buttons" class="button-container">
+        <button id="filterButton">Filtrar compras mayores a $1000</button>
+        <button id="sortButton">Ordenar por fecha descendente</button>
+    </div>
+    <div id="purchaseHistoryTable">
+        @{ Html.RenderPartial("_PurchaseHistoryTable", Model); }
+    </div>
+</div>

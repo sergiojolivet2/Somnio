@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Somnio.DTO.PurchaseHistory>
+
+<table class="bordered wide-table">
+    <tr>
+        <th class="center-text">Id</th>
+        <th class="center-text">Number of items</th>
+        <th class="center-text">Total cost</th>
+        <th class="center-text">Date</th>
+    </tr>
+    @foreach (var purchase in Model)
+    {
+        <tr>
+            <td class="table-cell">@purchase.Id</td>
+            <td class="table-cell">@purchase.NumberOfItems</td>
+            <td class="table-cell">$ @purchase.TotalCost</td>
+            <td class="table-cell-wide">@purchase.Date.ToString("d 'de' MMMM 'de' yyyy")</td>
+        </tr>
+    }
+</table>

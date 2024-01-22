@@ -1,0 +1,28 @@
+﻿.center-text {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.table-cell {
+    width: 200px;
+    padding: 5px;
+}
+
+.table-cell-wide {
+    width: 300px;
+    padding: 5px;
+}
+
+.bordered td, .bordered th {
+    border: 2px solid black;
+}
+
+.wide-table {
+    width: 700px;
+}
